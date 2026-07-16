@@ -1,0 +1,1686 @@
+Delivered-To: jeffguival1992@gmail.com
+Received: by 2002:a05:7208:1025:b0:107:f6de:ce42 with SMTP id j5csp1156079rbn;
+        Thu, 16 Jul 2026 06:52:50 -0700 (PDT)
+X-Received: by 2002:a05:6102:41aa:b0:740:178:7724 with SMTP id ada2fe7eead31-7473b4490c6mr1229460137.14.1784209970491;
+        Thu, 16 Jul 2026 06:52:50 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1784209970; cv=none;
+        d=google.com; s=arc-20260327;
+        b=HtIrl0zFoDi37ympv0FnAf6B3zAvaDEwK8mw2Bwy9JLIwiLzwx1JSRGQE6oVKEP3aF
+         6OU9NCxXppqzhI7TWrzuTznTJStUJ8Mwob+wbHTqYsunuLVOBfxl4TnLswxq2giVZIqc
+         ziO7bRa8/ydKdjGz5nkodGilnIRcucqH2WRdmNaTq0GUK71f3HgeRLFiWE5fyilznWaM
+         mRYN/H9kkg3OLHSFnNWwgd24e8FTpTETbSHSRT1O8mWJyUtHiJlpm3R8PDi+9BR4RAtJ
+         7vF9BCIFGnrZ3oPJh7S7JjHqmUk3E1uJe9LdyClvAN73v3e53dvnmwPymuho9U00BUbE
+         YC2w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=mime-version:date:subject:to:from:message-id:dkim-signature;
+        bh=B5/VBzCXKwimSUm4htWwJXGnKdBumaZ00FFYBYzh1BE=;
+        fh=6ZEJBg9lTO00WufOiNjMV7L5GpLkFTHalqerolrbKo4=;
+        b=sNzqYyiLMmGSEQTRYfuVc+S+AuuqwbvLE3jSeOpeqSzsCC5eFYirNzsGHEN99pxR//
+         DD2Lpba/SziSyH2SF59Q97MkvExqDcNsEVtZJMZob1ZatmoXsPDOCR7jopzdp+g1BD6N
+         /7wOfWBEdxdxUPvq4l7mDeo4JquJM7T3iG/o+ksZx97ptzbug87Qta8wPcUIcvGJuNjn
+         aYAkc1JlMFzz9j8q9Zci6fETJkTSBZWGkUiHqMWqcoNkXL03umZ663KmzAj4H0PaHJm+
+         x3R9tA7EDvG1QodB86msl7WsiAAB38l8ss+oWRszuo2OEGJ7QAyBIKFXHwLX7mbhGDX/
+         4E2A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=Z4ZeJutg;
+       spf=pass (google.com: domain of jeffguival92@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jeffguival92@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <jeffguival92@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id ada2fe7eead31-747373b5e99sor739673137.2.2026.07.16.06.52.50
+        for <jeffguival1992@gmail.com>
+        (Google Transport Security);
+        Thu, 16 Jul 2026 06:52:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jeffguival92@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=Z4ZeJutg;
+       spf=pass (google.com: domain of jeffguival92@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jeffguival92@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1784209970; x=1784814770; dara=google.com;
+        h=content-type:mime-version:date:subject:to:from:message-id:from:to
+         :cc:subject:date:message-id:reply-to:content-type;
+        bh=B5/VBzCXKwimSUm4htWwJXGnKdBumaZ00FFYBYzh1BE=;
+        b=Z4ZeJutg4Z9e8hGs7uecjZW/xykvIcvSvzLKGkMEHX5M/fYIt4CwODXigejO1AUGOj
+         KZaMZthvNXD6l0RUUsINOxqyWD4EgvJy9Tmpgov6RweBpLXtUWdyoEDlBwjyIULu/Vjv
+         P3qihpxcMiw9EmfWP1By1g2t3c0CLeBJlG5pTsNYTRflBZEH8iLaCE2ZiltOXtz1ObiR
+         DTkIkKVc95UpXDU+OjLCn4Z7JegPwQF6TaBQuKsOhpaAHYMxa0++ZhpG367dVrdKJAqb
+         OHYVa9bcupWqsWd0xMjeb20X7/DVaPk0AQnHTgZJ/RmpnmqDhKQaE1vhfsVu/1TEnRrz
+         fuKw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1784209970; x=1784814770;
+        h=content-type:mime-version:date:subject:to:from:message-id:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to
+         :content-type;
+        bh=B5/VBzCXKwimSUm4htWwJXGnKdBumaZ00FFYBYzh1BE=;
+        b=FTJp0Pi5TEtuoONBr+VMOOc7lu0x2yHS07O4Ga1BOeUDgftUAg7G3iJtTzeVaYvVDJ
+         lmhxmRO3AflHk9QKfwBIq2QU4qv28JLkERFWwpeXMLW5GiWhPiBMJ5MUI3Umpce7IS38
+         oLnVJkITXDHnQ58EAdM143W+Phu/5JXl4hJUE5nh5hRb6Pk3MrCBr2ZoSquwc5XVtF5z
+         r4nvCTPEX+gJOK3frFrDGSVo9L1yR5sGaUvJnKATGeUdWGOjYsSc+6tI+rjSGX+0pviq
+         34o40e+bFYGR9lafGSP/rU6WUwYAjShBsQ+hTVS01/SZLfLflL8RkIvKGBV/yllxo5oZ
+         +oxw==
+X-Gm-Message-State: AOJu0Yw7WV0ixpx2PNj0K21LWQFbF/N092h7zP306DR2uBhb+unCQRZH
+	JRb/kkeLLzqcT4xyC9nkRg6AXpEu7jxXttqTi6MLZZo23wXp/Ob1p3KHs9ygrckD
+X-Gm-Gg: AfdE7ckbG+j3NkK2k6mABJq2M1OxO8DlNJYcbd5ZlwGEN/FvYGijfe6+s46gNb8CzzT
+	1FqN9gsYyuH7aIAd33/tsT97rf3BinRpDudVZnuPOW91AY4IvSYYB3uotiLQSnRXqLuEk9WINyi
+	WoZ9WD0cBWbolz48X//hJjNTabN9OPE5u3PDxSp7vhfD5O/AJNKh4NK9vSR5Xq14B/737aLnGpy
+	C5U28JzTtGn7EGa/yvmDE7377+0ptZTvLEpVu4F7Ib86q+tj3eVrqtzwGCEKsJKt6GOmCoA0yWZ
+	pkaFMxSuiph0qxg9IqnFmrwzQ5FAn2Wz5deasFYnPDhsCillvaMxw6u418dAUkt1k6PELlE0vtQ
+	vd9CwRNdwZsG/5ZmVI7KeEko5hdpT+3XJ5yTh4++v6LwHhqjOmE6ZsGmDQRy0d16nA/bkx4fS6x
+	g5dlrBnsWsWg==
+X-Received: by 2002:a05:6102:8342:10b0:745:4670:42fd with SMTP id ada2fe7eead31-7473b4faef0mr954269137.20.1784209969703;
+        Thu, 16 Jul 2026 06:52:49 -0700 (PDT)
+Return-Path: <jeffguival92@gmail.com>
+Received: from DESKTOP-QI4MLT4 ([181.199.46.212])
+        by smtp.gmail.com with ESMTPSA id ada2fe7eead31-744d6a90d4fsm14135994137.5.2026.07.16.06.52.48
+        for <jeffguival1992@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 16 Jul 2026 06:52:49 -0700 (PDT)
+Message-ID: <6a58e231.38c7cd2a.15ff8b.081c@mx.google.com>
+From: jeffguival92@gmail.com
+To: jeffguival1992@gmail.com
+Subject: Reporte de =?utf-8?b?dmFsaWRhY2nDs24=?= de conversiones - Reto UiPath
+Date: Thu, 16 Jul 2026 08:52:43 -0500
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-OITb4nWLLJ5mhSmM16s+qQ=="
+
+--=-OITb4nWLLJ5mhSmM16s+qQ==
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    /*Actions*/
+    .btnPrimary:hover {
+      background-color: #ffcc00 !important;
+    }
+
+    .btnSecondary:hover {
+      background-color: #b5b9c4 !important;
+    }
+
+    .btnTertiary:hover {
+      background-color: #e9ecf3 !important;
+      border: 1px solid #0f265c !important;
+    }
+
+    .btnComplementary:hover {
+      background-color: #0c1f50 !important;
+    }
+
+    .btnCMB:hover {
+      background-color: #ffffff !important;
+      color: #0f265c !important;
+      border: solid 1px #0f265c !important;
+    }
+
+    /* hacks */
+    * {
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      max-height: 1000000px;
+    }
+
+    #outlook a {
+      padding: 0;
+    }
+
+    .ReadMsgBody {
+      width: 100%;
+    }
+
+    .ExternalClass {
+      width: 100%;
+    }
+
+    .ExternalClass * {
+      line-height: 100%;
+    }
+
+    .ios_rstLinks a {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width: 599px) {
+      .hideme-xs {
+        display: none !important;
+      }
+
+      .showme-xs {
+        display: block !important;
+      }
+    }
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width: 599px) {
+
+      /*XS*/
+      /* global styles */
+      .Tshowme-xs {
+        display: table !important;
+      }
+
+      .blockwrap-xs {
+        display: block !important;
+      }
+
+      .movedown-xs {
+        display: table-footer-group !important;
+      }
+
+      .moveup-xs {
+        display: table-header-group !important;
+      }
+
+      .txt-xs-left {
+        text-align: left !important;
+      }
+
+      .txt-xs-center {
+        text-align: center !important;
+      }
+
+      .txt-xs-right {
+        text-align: right !important;
+      }
+
+      .m-xs-auto {
+        margin: 0 auto !important;
+      }
+
+      .container-xs {
+        width: 100% !important;
+      }
+
+      .float-xs-unset {
+        float: unset !important;
+      }
+
+      .bradius-xs-0 {
+        border-radius: unset !important
+      }
+
+      .overflow-xs-hidden {
+        overflow: hidden !important;
+      }
+
+      /*img border="0"{outline: 0;display:block;}*/
+      /* font styles */
+      .font-xs-C8,
+      .font-xs-8 {
+        font-size: 8px !important;
+        line-height: 10px !important;
+      }
+
+      .font-xs-C10,
+      .font-xs-10 {
+        font-size: 10px !important;
+        line-height: 12px !important;
+      }
+
+      .font-xs-C12,
+      .font-xs-12 {
+        font-size: 12px !important;
+        line-height: 14px !important;
+      }
+
+      .font-xs-C14,
+      .font-xs-14 {
+        font-size: 14px !important;
+        line-height: 17px !important;
+      }
+
+      .font-xs-C16,
+      .font-xs-16 {
+        font-size: 16px !important;
+        line-height: 19px !important;
+      }
+
+      .font-xs-C18,
+      .font-xs-18 {
+        font-size: 18px !important;
+        line-height: 22px !important;
+      }
+
+      .font-xs-C20,
+      .font-xs-20 {
+        font-size: 20px !important;
+        line-height: 24px !important;
+      }
+
+      .font-xs-C24,
+      .font-xs-22 {
+        font-size: 22px !important;
+        line-height: 26px !important;
+      }
+
+      .font-xs-C28,
+      .font-xs-24 {
+        font-size: 24px !important;
+        line-height: 29px !important;
+      }
+
+      .font-xs-C32,
+      .font-xs-28 {
+        font-size: 28px !important;
+        line-height: 34px !important;
+      }
+
+      .font-xs-C40,
+      .font-xs-32 {
+        font-size: 32px !important;
+        line-height: 38px !important;
+      }
+
+      /*Paddings*/
+      /*Resets*/
+      .p-xs-0 {
+        padding-top: 0px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+      }
+
+      .px-xs-0 {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+      }
+
+      .py-xs-0 {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+      }
+
+      .pt-xs-0 {
+        padding-top: 0px !important;
+      }
+
+      .pr-xs-0 {
+        padding-right: 0px !important;
+      }
+
+      .pb-xs-0 {
+        padding-bottom: 0px !important;
+      }
+
+      .pl-xs-0 {
+        padding-left: 0px !important;
+      }
+
+      /*Padding Spacings*/
+      .pt-xs-4 {
+        padding-top: 4px !important;
+      }
+
+      .pt-xs-8 {
+        padding-top: 8px !important;
+      }
+
+      .pt-xs-12 {
+        padding-top: 12px !important;
+      }
+
+      .pt-xs-16 {
+        padding-top: 16px !important;
+      }
+
+      .pt-xs-20 {
+        padding-top: 20px !important;
+      }
+
+      .pt-xs-24 {
+        padding-top: 24px !important;
+      }
+
+      .pt-xs-32 {
+        padding-top: 32px !important;
+      }
+
+      .pt-xs-40 {
+        padding-top: 40px !important;
+      }
+
+      .pt-xs-48 {
+        padding-top: 48px !important;
+      }
+
+      .pt-xs-56 {
+        padding-top: 56px !important;
+      }
+
+      .pt-xs-64 {
+        padding-top: 64px !important;
+      }
+
+      .pt-xs-72 {
+        padding-top: 72px !important;
+      }
+
+      .pt-xs-80 {
+        padding-top: 80px !important;
+      }
+
+      .pt-xs-88 {
+        padding-top: 88px !important;
+      }
+
+      .pt-xs-96 {
+        padding-top: 96px !important;
+      }
+
+      .pt-xs-104 {
+        padding-top: 104px !important;
+      }
+
+      .pt-xs-112 {
+        padding-top: 112px !important;
+      }
+
+      .pt-xs-120 {
+        padding-top: 120px !important;
+      }
+
+      /*Padding Right*/
+      .pr-xs-4 {
+        padding-right: 4px !important;
+      }
+
+      .pr-xs-8 {
+        padding-right: 8px !important;
+      }
+
+      .pr-xs-12 {
+        padding-right: 12px !important;
+      }
+
+      .pr-xs-16 {
+        padding-right: 16px !important;
+      }
+
+      .pr-xs-20 {
+        padding-right: 20px !important;
+      }
+
+      .pr-xs-24 {
+        padding-right: 24px !important;
+      }
+
+      .pr-xs-32 {
+        padding-right: 32px !important;
+      }
+
+      .pr-xs-40 {
+        padding-right: 40px !important;
+      }
+
+      .pr-xs-48 {
+        padding-right: 48px !important;
+      }
+
+      .pr-xs-56 {
+        padding-right: 56px !important;
+      }
+
+      .pr-xs-64 {
+        padding-right: 64px !important;
+      }
+
+      .pr-xs-72 {
+        padding-right: 72px !important;
+      }
+
+      .pr-xs-80 {
+        padding-right: 80px !important;
+      }
+
+      /*Padding Bottom*/
+      .pb-xs-4 {
+        padding-bottom: 4px !important;
+      }
+
+      .pb-xs-8 {
+        padding-bottom: 8px !important;
+      }
+
+      .pb-xs-12 {
+        padding-bottom: 12px !important;
+      }
+
+      .pb-xs-16 {
+        padding-bottom: 16px !important;
+      }
+
+      .pb-xs-20 {
+        padding-bottom: 20px !important;
+      }
+
+      .pb-xs-24 {
+        padding-bottom: 24px !important;
+      }
+
+      .pb-xs-32 {
+        padding-bottom: 32px !important;
+      }
+
+      .pb-xs-40 {
+        padding-bottom: 40px !important;
+      }
+
+      .pb-xs-48 {
+        padding-bottom: 48px !important;
+      }
+
+      .pb-xs-56 {
+        padding-bottom: 56px !important;
+      }
+
+      .pb-xs-64 {
+        padding-bottom: 64px !important;
+      }
+
+      .pb-xs-72 {
+        padding-bottom: 72px !important;
+      }
+
+      .pb-xs-80 {
+        padding-bottom: 80px !important;
+      }
+
+      .pb-xs-88 {
+        padding-bottom: 88px !important;
+      }
+
+      .pb-xs-96 {
+        padding-bottom: 96px !important;
+      }
+
+      .pb-xs-104 {
+        padding-bottom: 104px !important;
+      }
+
+      .pb-xs-112 {
+        padding-bottom: 112px !important;
+      }
+
+      .pb-xs-120 {
+        padding-bottom: 120px !important;
+      }
+
+      /*Padding Left*/
+      .pl-xs-4 {
+        padding-left: 4px !important;
+      }
+
+      .pl-xs-8 {
+        padding-left: 8px !important;
+      }
+
+      .pl-xs-12 {
+        padding-left: 12px !important;
+      }
+
+      .pl-xs-16 {
+        padding-left: 16px !important;
+      }
+
+      .pl-xs-20 {
+        padding-left: 20px !important;
+      }
+
+      .pl-xs-24 {
+        padding-left: 24px !important;
+      }
+
+      .pl-xs-32 {
+        padding-left: 32px !important;
+      }
+
+      .pl-xs-40 {
+        padding-left: 40px !important;
+      }
+
+      .pl-xs-48 {
+        padding-left: 48px !important;
+      }
+
+      .pl-xs-56 {
+        padding-left: 56px !important;
+      }
+
+      .pl-xs-64 {
+        padding-left: 64px !important;
+      }
+
+      .pl-xs-72 {
+        padding-left: 72px !important;
+      }
+
+      .pl-xs-80 {
+        padding-left: 80px !important;
+      }
+
+      /*padding Y*/
+      .py-xs-20 {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+      }
+
+      .py-xs-24 {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+      }
+
+      .py-xs-32 {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+      }
+
+      .py-xs-40 {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+      }
+
+      /*padding X*/
+      .px-xs-4 {
+        padding-right: 4px !important;
+        padding-left: 4px !important;
+      }
+
+      .px-xs-8 {
+        padding-right: 8px !important;
+        padding-left: 8px !important;
+      }
+
+      .px-xs-12 {
+        padding-right: 12px !important;
+        padding-left: 12px !important;
+      }
+
+      .px-xs-16 {
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+      }
+
+      .px-xs-20 {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+      }
+
+      .px-xs-24 {
+        padding-right: 24px !important;
+        padding-left: 24px !important;
+      }
+
+      .px-xs-32 {
+        padding-right: 32px !important;
+        padding-left: 32px !important;
+      }
+
+      .px-xs-40 {
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+      }
+
+      .px-xs-48 {
+        padding-right: 48px !important;
+        padding-left: 48px !important;
+      }
+
+      .px-xs-56 {
+        padding-right: 56px !important;
+        padding-left: 56px !important;
+      }
+
+      .px-xs-64 {
+        padding-right: 64px !important;
+        padding-left: 64px !important;
+      }
+
+      .px-xs-72 {
+        padding-right: 72px !important;
+        padding-left: 72px !important;
+      }
+
+      .px-xs-80 {
+        padding-right: 80px !important;
+        padding-left: 80px !important;
+      }
+
+      /*Grid*/
+      .col-xs-12 {
+        float: unset !important;
+        width: 100% !important
+      }
+
+      .col-xs-11 {
+        float: left !important;
+        width: 92% !important
+      }
+
+      .col-xs-10 {
+        float: left !important;
+        width: 83% !important
+      }
+
+      .col-xs-9 {
+        float: left !important;
+        width: 75% !important
+      }
+
+      .col-xs-8 {
+        float: left !important;
+        width: 67% !important
+      }
+
+      .col-xs-7 {
+        float: left !important;
+        width: 58% !important
+      }
+
+      .col-xs-6 {
+        float: left !important;
+        width: 50% !important
+      }
+
+      .col-xs-5 {
+        float: left !important;
+        width: 42% !important
+      }
+
+      .col-xs-4 {
+        float: left !important;
+        width: 33% !important
+      }
+
+      .col-xs-3 {
+        float: left !important;
+        width: 25% !important
+      }
+
+      .col-xs-2 {
+        float: left !important;
+        width: 17% !important
+      }
+
+      .col-xs-1 {
+        float: left !important;
+        width: 8% !important
+      }
+
+      /*Heights*/
+      .h-xs-4 {
+        height: 4px !important;
+      }
+
+      .h-xs-8 {
+        height: 8px !important;
+      }
+
+      .h-xs-12 {
+        height: 12px !important;
+      }
+
+      .h-xs-16 {
+        height: 16px !important;
+      }
+
+      .h-xs-20 {
+        height: 20px !important;
+      }
+
+      .h-xs-24 {
+        height: 24px !important;
+      }
+
+      .h-xs-32 {
+        height: 32px !important;
+      }
+
+      .h-xs-36 {
+        height: 36px !important;
+      }
+
+      .h-xs-40 {
+        height: 40px !important;
+      }
+
+      .h-xs-48 {
+        height: 48px !important;
+      }
+
+      .h-xs-56 {
+        height: 56px !important;
+      }
+
+      /*Widths*/
+      .w-xs-100pct {
+        width: 100% !important;
+      }
+
+      .w-xs-4 {
+        width: 4px !important;
+      }
+
+      .w-xs-8 {
+        width: 8px !important;
+      }
+
+      .w-xs-12 {
+        width: 12px !important;
+      }
+
+      .w-xs-16 {
+        width: 16px !important;
+      }
+
+      .w-xs-20 {
+        width: 20px !important;
+      }
+
+      .w-xs-24 {
+        width: 24px !important;
+      }
+
+      .w-xs-32 {
+        width: 32px !important;
+      }
+
+      .w-xs-40 {
+        width: 40px !important;
+      }
+
+      .w-xs-48 {
+        width: 48px !important;
+      }
+
+      .w-xs-56 {
+        width: 56px !important;
+      }
+
+      .w-xs-64 {
+        width: 64px !important;
+      }
+
+      .w-xs-72 {
+        width: 72px !important;
+      }
+
+      .w-xs-80 {
+        width: 80px !important;
+      }
+
+      .w-xs-88 {
+        width: 88px !important;
+      }
+
+      .w-xs-96 {
+        width: 96px !important;
+      }
+
+      .w-xs-104 {
+        width: 104px !important;
+      }
+
+      .w-xs-112 {
+        width: 112px !important;
+      }
+
+      .w-xs-120 {
+        width: 120px !important;
+      }
+
+      .w-xs-160 {
+        width: 160px !important;
+      }
+
+      .w-xs-167 {
+        width: 167px !important;
+      }
+
+      .w-xs-240 {
+        width: 240px !important;
+      }
+
+      /*MaxWidth*/
+      .mw-xs-120 {
+        max-width: 120px !important;
+      }
+
+      .mw-xs-160 {
+        max-width: 160px !important;
+      }
+
+      .mw-xs-168 {
+        max-width: 168px !important;
+      }
+
+      .mw-xs-180 {
+        max-width: 180px !important;
+      }
+
+      .mw-xs-200 {
+        max-width: 200px !important;
+      }
+
+      .mw-xs-220 {
+        max-width: 220px !important;
+      }
+
+      .mw-xs-240 {
+        max-width: 240px !important;
+      }
+
+      .mw-xs-280 {
+        max-width: 280px !important;
+      }
+
+      .mw-xs-300 {
+        max-width: 300px !important;
+      }
+
+      .mw-xs-320 {
+        max-width: 320px !important;
+      }
+    }
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width: 479px) {
+      .hideme-xxs {
+        display: none !important;
+      }
+
+      .showme-xxs {
+        display: block !important;
+      }
+    }
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width: 479px) {
+
+      /*XXS*/
+      /* global styles */
+      .Tshowme-xxs {
+        display: table !important;
+      }
+
+      .movedown-xxs {
+        display: table-footer-group !important;
+      }
+
+      .moveup-xxs {
+        display: table-header-group !important;
+      }
+
+      .txt-xxs-left {
+        text-align: left !important;
+      }
+
+      .txt-xxs-center {
+        text-align: center !important;
+      }
+
+      .txt-xxs-right {
+        text-align: right !important;
+      }
+
+      .m-xxs-auto {
+        margin: 0 auto !important;
+      }
+
+      .container-xxs {
+        width: 100% !important;
+      }
+
+      .float-xxs-unset {
+        float: unset !important;
+      }
+
+      .bradius-xxs-0 {
+        border-radius: unset !important
+      }
+
+      .overflow-xxs-hidden {
+        overflow: hidden !important;
+      }
+
+      .bground-xxs-footer {
+        background-image: url('https://bancopichincha-prod.pichincha.com/tcp/public/images/Email/background-MOBILE.png');
+      }
+
+      /*padding XXS: Resets*/
+      .p-xxs-0 {
+        padding-top: 0px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+      }
+
+      .px-xxs-0 {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+      }
+
+      .py-xxs-0 {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+      }
+
+      .pt-xxs-0 {
+        padding-top: 0px !important;
+      }
+
+      .pr-xxs-0 {
+        padding-right: 0px !important;
+      }
+
+      .pb-xxs-0 {
+        padding-bottom: 0px !important;
+      }
+
+      .pl-xxs-0 {
+        padding-left: 0px !important;
+      }
+
+      /*Padding Right*/
+      .pr-xxs-4 {
+        padding-right: 4px !important;
+      }
+
+      .pr-xxs-8 {
+        padding-right: 8px !important;
+      }
+
+      .pr-xxs-12 {
+        padding-right: 12px !important;
+      }
+
+      .pr-xxs-16 {
+        padding-right: 16px !important;
+      }
+
+      .pr-xxs-20 {
+        padding-right: 20px !important;
+      }
+
+      .pr-xxs-24 {
+        padding-right: 24px !important;
+      }
+
+      .pr-xxs-32 {
+        padding-right: 32px !important;
+      }
+
+      .pr-xxs-40 {
+        padding-right: 40px !important;
+      }
+
+      .pr-xxs-48 {
+        padding-right: 48px !important;
+      }
+
+      .pr-xxs-56 {
+        padding-right: 56px !important;
+      }
+
+      .pr-xxs-64 {
+        padding-right: 64px !important;
+      }
+
+      .pr-xxs-72 {
+        padding-right: 72px !important;
+      }
+
+      .pr-xxs-80 {
+        padding-right: 80px !important;
+      }
+
+      /*Padding Left*/
+      .pl-xxs-4 {
+        padding-left: 4px !important;
+      }
+
+      .pl-xxs-8 {
+        padding-left: 8px !important;
+      }
+
+      .pl-xxs-12 {
+        padding-left: 12px !important;
+      }
+
+      .pl-xxs-16 {
+        padding-left: 16px !important;
+      }
+
+      .pl-xxs-20 {
+        padding-left: 20px !important;
+      }
+
+      .pl-xxs-24 {
+        padding-left: 24px !important;
+      }
+
+      .pl-xxs-32 {
+        padding-left: 32px !important;
+      }
+
+      .pl-xxs-40 {
+        padding-left: 40px !important;
+      }
+
+      .pl-xxs-48 {
+        padding-left: 48px !important;
+      }
+
+      .pl-xxs-56 {
+        padding-left: 56px !important;
+      }
+
+      .pl-xxs-64 {
+        padding-left: 64px !important;
+      }
+
+      .pl-xxs-72 {
+        padding-left: 72px !important;
+      }
+
+      .pl-xxs-80 {
+        padding-left: 80px !important;
+      }
+
+      /*padding Y*/
+      .py-xxs-20 {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+      }
+
+      .py-xxs-24 {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+      }
+
+      .py-xxs-32 {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+      }
+
+      .py-xxs-40 {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+      }
+
+      /*padding X*/
+      .px-xxs-4 {
+        padding-right: 4px !important;
+        padding-left: 4px !important;
+      }
+
+      .px-xxs-8 {
+        padding-right: 8px !important;
+        padding-left: 8px !important;
+      }
+
+      .px-xxs-12 {
+        padding-right: 12px !important;
+        padding-left: 12px !important;
+      }
+
+      .px-xxs-16 {
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+      }
+
+      .px-xxs-20 {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+      }
+
+      .px-xxs-24 {
+        padding-right: 24px !important;
+        padding-left: 24px !important;
+      }
+
+      .px-xxs-32 {
+        padding-right: 32px !important;
+        padding-left: 32px !important;
+      }
+
+      .px-xxs-40 {
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+      }
+
+      .px-xxs-48 {
+        padding-right: 48px !important;
+        padding-left: 48px !important;
+      }
+
+      .px-xxs-56 {
+        padding-right: 56px !important;
+        padding-left: 56px !important;
+      }
+
+      .px-xxs-64 {
+        padding-right: 64px !important;
+        padding-left: 64px !important;
+      }
+
+      .px-xxs-72 {
+        padding-right: 72px !important;
+        padding-left: 72px !important;
+      }
+
+      .px-xxs-80 {
+        padding-right: 80px !important;
+        padding-left: 80px !important;
+      }
+
+      /*Grid*/
+      .col-xxs-12 {
+        float: unset !important;
+        width: 100% !important
+      }
+
+      .col-xxs-11 {
+        float: left !important;
+        width: 92% !important
+      }
+
+      .col-xxs-10 {
+        float: left !important;
+        width: 83% !important
+      }
+
+      .col-xxs-9 {
+        float: left !important;
+        width: 75% !important
+      }
+
+      .col-xxs-8 {
+        float: left !important;
+        width: 67% !important
+      }
+
+      .col-xxs-7 {
+        float: left !important;
+        width: 58% !important
+      }
+
+      .col-xxs-6 {
+        float: left !important;
+        width: 50% !important
+      }
+
+      .col-xxs-5 {
+        float: left !important;
+        width: 42% !important
+      }
+
+      .col-xxs-4 {
+        float: left !important;
+        width: 33% !important
+      }
+
+      .col-xxs-3 {
+        float: left !important;
+        width: 25% !important
+      }
+
+      .col-xxs-2 {
+        float: left !important;
+        width: 17% !important
+      }
+
+      .col-xxs-1 {
+        float: left !important;
+        width: 8% !important
+      }
+
+      /*Widths*/
+      .w-xxs-100pct {
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
+
+<body bgcolor="#f3f4f7"
+  style="-webkit-text-size-adjust:none;background-color : #f3f4f7;font-family : Arial, helvetica, sans-serif;margin:0;padding: 0px;"
+  topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+  <table bgcolor="#f3f4f7" width="100%" border="0" cellpadding="0" cellspacing="0" align="center"
+    style="background-color : #f3f4f7;border-spacing: 0;width: 100%;">
+    <tr>
+      <td align="center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+        <table cellspacing="0" cellpadding="0" border="0" width="600" class="container-xs" align="center"
+          style="border-spacing: 0;">
+          <tr>
+            <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+              <custom name="opencounter" type="tracking" />
+              <!-- Header-->
+              <div data-type="slot" data-key="header_security"></div>
+              <!-- Quitar -->
+              <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-spacing:0;">
+                <tr>
+                  <td style="padding-top:20px;padding-right: 0;padding-bottom: 20px;padding-left: 0;">
+                    
+                  </td>
+                </tr>
+              </table>
+              <!-- Contenido 1-->
+              <table cellspacing="0" cellpadding="0" border="0" width="100%" class="bradius-xs-0"
+                style="box-shadow: 0 2px 12px 0 #D7D7D7;overflow: hidden;border-radius: 4px;width: 100%;">
+                <tr>
+                  <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                    <div data-type="slot" data-key="contenido1"></div>
+                    <!-- Header Logo -->
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#FFFFFF"
+                      style="border-spacing: 0;background-color: #FFFFFF;">
+                      <tr>
+                        <td valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                          <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                            style="width:100%;border-spacing: 0;">
+                            <tr>
+                              <td valign="top" align="left"
+                                style="padding-top: 20px;padding-right: 0;padding-bottom: 20px;padding-left: 20px;text-align: left;">
+                                <img class="h-xs-36"
+                                  style="display: block;padding: 0px;text-align: left;height: 42px;width: auto;border: 0px;"
+                                  alt="Logo Banco Pichincha"
+                                  src="https://bancopichincha-prod.pichincha.com/tcp/public/images/Email/logo2.png"
+                                  height="42">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0px;">
+                                <table cellpadding="0" cellspacing="0" width="100%" class="condiciones-span-gris"
+                                  style="margin-top: 0px;border-top: solid 1px #DEE3ED; margin-left: 0px;padding-right: 0px;padding-top:0px;padding-bottom:0px;">
+                                  <tr>
+                                    <td>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#000000"
+                      style="width: 100%;border-spacing:0;background-color: #FFFFFF;">
+                      <tr>
+                       
+                      </tr>
+                      <tr>
+                        <td class="px-xs-16 pb-xs-32"
+                          style=" padding-top: 0px;padding-right: 40px;padding-bottom:40px;padding-left:40px;text-align: center;">
+                          <span class="font-xs-C32"
+                            style="font-family: Arial;font-size: 32px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 40px;letter-spacing: normal;color: #0F265C;">
+                            <br>Reporte de validación de conversiones<br />
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-xs-16" style="padding-left: 40px;padding-right: 40px;">
+                          <table cellpadding="0" cellspacing="0" width="100%"
+                            style="background-color: transparent; min-width: 100%;">
+                            <!-- Datos de tabla -->
+                            <tr>
+                              <td>
+                                <table cellpadding="0" cellspacing="0" width="100%">
+                                  <!-- Tarjeta Solicitada -->
+                                  <tr>
+                                    <td>
+                                      <table cellpadding="0" cellspacing="0" width="100%"
+                                        style="border: 2px solid #DEE3ED;border-radius: 8px;">
+                                        <tr>
+                                          <td>
+                                            <table cellpadding="0" cellspacing="0" width="100%">
+                                              <tr>
+                                                <td width="100%">
+                                                  <table cellpadding="0" cellspacing="0" width="100%">
+
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- Linea -->
+                                        <tr>
+                                          <td style="padding: 0px;">
+                                            <table cellpadding="0" cellspacing="0" width="100%"
+                                              class="condiciones-span-gris"
+                                              style="margin-top: 0px;border-top: solid 1px #DEE3ED; margin-left: 0px;padding-right: 0px;padding-top:0px;padding-bottom:0px;">
+                                              <tr>
+                                                <td>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+
+                                        <!-- Linea -->
+                                        <tr>
+                                          <td style="padding: 0px;">
+                                            
+                                          </td>
+                                        </tr>
+                                       
+                                        
+                                        <!-- Linea -->
+                                        <tr>
+                                          <td style="padding: 0px;">
+                                            <table cellpadding="0" cellspacing="0" width="100%"
+                                              class="condiciones-span-gris"
+                                              style="margin-top: 0px;border-top: solid 1px #DEE3ED; margin-left: 0px;padding-right: 40px;padding-top:0px;padding-bottom:0px;">
+                                              <tr>
+                                                <td>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <!-- Costo envio -->
+                                        <tr>
+                                          <td>
+                                            <table cellpadding="0" cellspacing="0" width="100%"
+                                              style="background-color: #F9FAFC;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;">
+                                              <tr>
+                                                <td width="100%">
+                                                  <table cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                      <td class="pl-xs-16"
+                                                        style="padding-top: 16px;padding-bottom: 26px;padding-left: 24px;">
+                                                        <span class="font-xs-C14"
+                                                          style="color: #2C2C30; font-weight: 400; font-family: Arial; font-size: 16px; line-height: 24px;">
+                                                          Transacción 1: Fallido. La diferencia es mayor a la permitida -1.9912999999999954
+
+                                                        </span>
+                                                      </td>
+                                                     
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <!-- Linea -->
+                                   <!-- Linea -->
+                                  <tr>
+                                    <td class="pt-xs-56" style="padding-top: 63px;">
+                                      <table cellpadding="0" cellspacing="0" width="100%" class="condiciones-span-gris"
+                                        style="margin-top: 0px;border-top: solid 1px #DEE3ED; margin-left: 0px;padding-right: 40px;padding-top:0px;padding-bottom:0px;">
+                                        <tr>
+                                          <td>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--Separador -->
+                    <table id="segmentoSeparador0" class="tb_properties border_style"
+                      style="background-color:#0f265c;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); margin-top: 24px; margin-bottom: 0px; border-radius: 4px;min-width: 100%; border-radius: 4px;"
+                      cellspacing="0" cellpadding="0" bgcolor="#ffffff" width="100%">
+                    </table>
+                    <!--Contenido 2 -->
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff"
+                      style="background-color:#FFFFFF;width: 100%;border-spacing: 0;box-shadow: 0 2px 12px 0 #D7D7D7;border-radius: 4px;">
+                      <tr>
+                        <td style="padding-top:20px;padding-right:0;padding-bottom:0;padding-left:0;">
+                          <div data-type="slot" data-key="contenido2"></div>
+                          
+                          <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-spacing:0;">
+                            <tr>
+                              <td class="px-xs-20 pt-xs-20"
+                                style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;text-align: center;">
+                                
+                                <a class="sinEstilos" href="https://www.pichincha.com/portal/" target="_blank"
+                                  style="color:#0F265C;font-family: Arial;font-size: 14px;font-weight: bold;line-height: 16px;text-decoration: none;">www.pichincha.com</a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-spacing:0;">
+                            <tr>
+                              <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                                <img alt="Spacer" width="40" height="32"
+                                  src="https://bancopichincha-prod.pichincha.com/tcp/public/images/Email/pixel.gif">
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- Footer-->
+                    <div data-type="slot" data-key="footer"></div>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f3f4f7"
+                      style="background-color: #f3f4f7;border-spacing:0;">
+                      <tr>
+                        <td style="padding-top:0px;padding-right:0;padding-bottom:0;padding-left:0">
+        
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
+--=-OITb4nWLLJ5mhSmM16s+qQ==
+Content-Type: application/octet-stream; name=ReporteFinal.xlsx
+Content-Disposition: attachment; filename=ReporteFinal.xlsx
+Content-Id: <001207fb-b198-4482-a78c-78c5ac54c68d>
+Content-Transfer-Encoding: base64
+
+UEsDBBQABgAIAAAAIQBi7p1oXgEAAJAEAAATAAgCW0NvbnRlbnRfVHlwZXNdLnhtbCCiBAIooAAC
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACs
+lMtOwzAQRfdI/EPkLUrcskAINe2CxxIqUT7AxJPGqmNbnmlp/56J+xBCoRVqN7ESz9x7MvHNaLJu
+bbaCiMa7UgyLgcjAVV4bNy/Fx+wlvxcZknJaWe+gFBtAMRlfX41mmwCYcbfDUjRE4UFKrBpoFRY+
+gOOd2sdWEd/GuQyqWqg5yNvB4E5W3hE4yqnTEOPRE9RqaSl7XvPjLUkEiyJ73BZ2XqVQIVhTKWJS
+uXL6l0u+cyi4M9VgYwLeMIaQvQ7dzt8Gu743Hk00GrKpivSqWsaQayu/fFx8er8ojov0UPq6NhVo
+Xy1bnkCBIYLS2ABQa4u0Fq0ybs99xD8Vo0zL8MIg3fsl4RMcxN8bZLqej5BkThgibSzgpceeRE85
+NyqCfqfIybg4wE/tYxx8bqbRB+QERfj/FPYR6brzwEIQycAhJH2H7eDI6Tt77NDlW4Pu8ZbpfzL+
+BgAA//8DAFBLAwQUAAYACAAAACEAtVUwI/QAAABMAgAACwAIAl9yZWxzLy5yZWxzIKIEAiigAAIA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKyS
+TU/DMAyG70j8h8j31d2QEEJLd0FIuyFUfoBJ3A+1jaMkG92/JxwQVBqDA0d/vX78ytvdPI3qyCH2
+4jSsixIUOyO2d62Gl/pxdQcqJnKWRnGs4cQRdtX11faZR0p5KHa9jyqruKihS8nfI0bT8USxEM8u
+VxoJE6UchhY9mYFaxk1Z3mL4rgHVQlPtrYawtzeg6pPPm3/XlqbpDT+IOUzs0pkVyHNiZ9mufMhs
+IfX5GlVTaDlpsGKecjoieV9kbMDzRJu/E/18LU6cyFIiNBL4Ms9HxyWg9X9atDTxy515xDcJw6vI
+8MmCix+o3gEAAP//AwBQSwMEFAAGAAgAAAAhAJZlWcK6AwAAfwkAAA8AAAB4bC93b3JrYm9vay54
+bWysVmtvqzgQ/b7S/gfEdxebZ0BNr3jqVmqvqjTb7kpXqlxwClvAWWOaVNX97zsmkD6yWmV7N0pM
+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
+SwUGAAAAAAoACgCAAgAAzCUAAAAA
+
+--=-OITb4nWLLJ5mhSmM16s+qQ==--
