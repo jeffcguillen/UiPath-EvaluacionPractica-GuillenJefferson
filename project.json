@@ -1,17 +1,19 @@
 {
-  "name": "EvaluacionPractica-GuillenJefferson-CargaTransacciones",
-  "projectId": "769d99f6-a9be-44fc-b28d-c7ba4a6d1050",
-  "description": "Proceso en blanco",
+  "name": "EvaluacionPractica-GuillenJefferson-ConvertirMonedas",
+  "projectId": "e43bad1c-28ab-4a5e-b966-6ab1f45d8dfa",
+  "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[3.6.0-preview]",
-    "UiPath.System.Activities": "[26.6.1]"
+    "UiPath.Mail.Activities": "[2.10.10]",
+    "UiPath.System.Activities": "[26.6.1]",
+    "UiPath.UIAutomation.Activities": "[26.10.0]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "26.0.197.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -46,7 +48,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "16e5493d-833c-4982-b022-a74e78e97105",
+      "uniqueId": "fc294d1d-a8ad-4093-9ec6-f3dd3973bd5a",
       "input": [],
       "output": []
     }

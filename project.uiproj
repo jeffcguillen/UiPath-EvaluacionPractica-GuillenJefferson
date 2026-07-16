@@ -1,6 +1,6 @@
 {
-  "Name": "EvaluacionPractica-GuillenJefferson-CargaTransacciones",
+  "Name": "EvaluacionPractica-GuillenJefferson-ConvertirMonedas",
   "ProjectType": "Process",
-  "Description": "Proceso en blanco",
+  "Description": "Blank Process",
   "MainFile": "Main.xaml"
 }
